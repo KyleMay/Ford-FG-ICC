@@ -1,0 +1,66 @@
+# This file is part of Ford FG HVAC Display.
+
+# Ford FG HVAC Display is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# Ford FG HVAC Display is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with Ford FG HVAC Display.  If not, see <https://www.gnu.org/licenses/>.
+
+
+# Ford FG HVAC Display - HVAC UI Markup
+# 
+# Created by Kyle May in 2018.
+
+<MyLayout>:
+	orientation: 'horizontal'
+	BoxLayout:
+		size_hint: (.2, 1)
+		orientation: 'vertical'
+		canvas:
+			Color:
+				rgb: .3, .3, .3
+			Rectangle:
+				size: self.size
+		Label:
+			text: root.time
+			font_size: 50
+			size_hint_y: 0.2
+
+		BoxLayout:
+			orientation: 'vertical'
+			width: 128
+			size_hint_x: None
+			pos_hint: {'x': 0.25}
+
+			Image:
+				source: root.recirculation_source
+			Image:
+				source: root.ac_source
+				width: self.parent.width
+			Image:
+				source: root.rear_demist_source
+	BoxLayout:
+		orientation: 'horizontal'
+		Image:
+			source: root.requested_temperature_source
+			size_hint_y: None
+			height: 550
+			allow_stretch: True
+			pos_hint: {'y': 0.15}
+
+
+			Label:
+				id: temperature_label
+				center: root.center_x - 190, root.center_y - 20
+				text: root.requested_temperature_string
+				font_size: 150
+
+		Image:
+			source: root.vent_source
