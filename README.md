@@ -2,6 +2,8 @@
 
 Information available at https://fordforums.com.au/showthread.php?t=11475851, influenced by https://fordforums.com.au/showthread.php?t=11430769.
 
+**Note: This code is under the GPLv3 license. Any modifications must have the source code distributed under this license.**
+
 # Files
 
 ## Arduino
@@ -9,4 +11,4 @@ Information available at https://fordforums.com.au/showthread.php?t=11475851, in
 
 ## Python
 - `HVACDisplay.py`: Receives the HVAC information from the Arduino and displays it on the GUI.
-- `HVACDisplayUI.kv`: The UI markup for the Python app.
+- `HVACDisplay.kv`: The UI markup for the Python app.
