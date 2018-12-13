@@ -59,7 +59,7 @@ class MyLayout(BoxLayout):
     auto = False
     vent = Vent.auto
     recirculation = Trinary.auto
-    ac_on = false
+    ac_on = False
     rear_demist_on = False
 
     vent_source = StringProperty()
