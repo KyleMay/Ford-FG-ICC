@@ -33,6 +33,7 @@ private:
 public:
     void setup();
     void draw(State state);
+    void draw2(State state);
     void draw_info_text(char* text);
     void setContrast(uint8_t value);
 };

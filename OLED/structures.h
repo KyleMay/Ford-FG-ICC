@@ -13,7 +13,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Ford FG HVAC Display.  If not, see <https://www.gnu.org/licenses/>.
 
- 
+
 // Ford FG HVAC Display - Data structures code
 // 
 // Created by Kyle May in 2019.
