@@ -16,7 +16,7 @@ This is the OLED screen version, all run on an Arduino and using an MCP2515 modu
 
 ## Unmaintained
 
-I am not using these scripts anymore so I'm not maintaining them, but they could be used as a reference.
+I am not using the following applications/scripts anymore so I'm not maintaining them, but they could be used as a reference.
 
 ### PythonGUI
 This is a Python GUI (Kivy) version, where an Arduino would be used to read the CAN data and send it over serial to a 
